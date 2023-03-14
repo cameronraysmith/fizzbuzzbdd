@@ -45,6 +45,7 @@ dependencies = [
   "coverage[toml]>=6.5",
   "pytest",
   "pytest-bdd",
+  "MonkeyType",
 ]
 
 [tool.hatch.envs.default.scripts]
