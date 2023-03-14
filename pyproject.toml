@@ -42,14 +42,18 @@ path = "src/fizzbuzzbdd/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
+  "ipython",
   "coverage[toml]>=6.5",
   "pytest",
   "pytest-bdd",
+  "xdoctest",
+  "pygments",
   "MonkeyType",
 ]
 
 [tool.hatch.envs.default.scripts]
 test = "pytest -rA {args:tests}"
+doctest = "python -m xdoctest {args:src/fizzbuzzbdd}"
 test-cov = "coverage run -m pytest -rA {args:tests}"
 cov-report = [
   "- coverage combine",
