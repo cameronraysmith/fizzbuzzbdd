@@ -13,10 +13,10 @@ Feature: FizzBuzz game
     When I play FizzBuzz
     Then the result should be "Fizz"
 
-  # Scenario: Playing FizzBuzz with a number divisible by 5
-  #   Given a number 5
-  #   When I play FizzBuzz
-  #   Then the result should be "Buzz"
+  Scenario: Playing FizzBuzz with a number divisible by 5
+    Given a number 5
+    When I play FizzBuzz
+    Then the result should be "Buzz"
 
   # Scenario: Playing FizzBuzz with a number divisible by both 3 and 5
   #   Given a number 15
