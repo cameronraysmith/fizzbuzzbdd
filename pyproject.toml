@@ -29,9 +29,9 @@ dependencies = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/unknown/fizzbuzzbdd#readme"
-Issues = "https://github.com/unknown/fizzbuzzbdd/issues"
-Source = "https://github.com/unknown/fizzbuzzbdd"
+Documentation = "https://github.com/cameronraysmith/fizzbuzzbdd#readme"
+Issues = "https://github.com/cameronraysmith/fizzbuzzbdd/issues"
+Source = "https://github.com/cameronraysmith/fizzbuzzbdd"
 
 [project.scripts]
 fizzbuzzbdd = "fizzbuzzbdd.cli:fizzbuzzbdd"
