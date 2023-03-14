@@ -8,10 +8,10 @@ Feature: FizzBuzz game
     When I play FizzBuzz
     Then the result should be "7"
 
-  # Scenario: Playing FizzBuzz with a number divisible by 3
-  #   Given a number 3
-  #   When I play FizzBuzz
-  #   Then the result should be "Fizz"
+  Scenario: Playing FizzBuzz with a number divisible by 3
+    Given a number 3
+    When I play FizzBuzz
+    Then the result should be "Fizz"
 
   # Scenario: Playing FizzBuzz with a number divisible by 5
   #   Given a number 5
