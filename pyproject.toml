@@ -26,6 +26,7 @@ classifiers = [
 ]
 dependencies = [
   "click",
+  "beartype",
 ]
 
 [project.urls]
@@ -44,6 +45,7 @@ dependencies = [
   "coverage[toml]>=6.5",
   "pytest",
   "pytest-bdd",
+  "MonkeyType",
 ]
 
 [tool.hatch.envs.default.scripts]
@@ -83,6 +85,18 @@ all = [
   "style",
   "typing",
 ]
+
+
+[tool.mypy]
+python_version = "3.10"
+
+[[tool.mypy.overrides]]
+module = [
+  "beartype",
+  "pytest",
+  "pytest_bdd",
+]
+ignore_missing_imports = true
 
 [tool.black]
 target-version = ["py37"]

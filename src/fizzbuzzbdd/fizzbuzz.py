@@ -1,4 +1,8 @@
-def fizzbuzz(number):
+from beartype import beartype
+
+
+@beartype
+def fizzbuzz(number: int) -> str:
     """Execute one round of the FizzBuzz game.
 
     Args:
