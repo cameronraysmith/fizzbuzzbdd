@@ -11,11 +11,16 @@ def fizzbuzz(number: int) -> str:
     Returns:
         str: The result of the FizzBuzz game.
     """
-    if number % 3 == 0 and number % 5 == 0:
-        return "FizzBuzz"
-    elif number % 3 == 0:
-        return "Fizz"
-    elif number % 5 == 0:
-        return "Buzz"
+    divisible_by_three = number % 3 == 0
+    divisible_by_five = number % 5 == 0
+
+    if divisible_by_three and divisible_by_five:
+        result = "FizzBuzz"
+    elif divisible_by_three:
+        result = "Fizz"
+    elif divisible_by_five:
+        result = "Buzz"
     else:
-        return str(number)
+        result = str(number)
+
+    return result
